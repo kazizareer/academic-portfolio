@@ -4,7 +4,7 @@ window.portfolio = {
   name: 'Kazi Md Zareer', initials: 'KZ', role: 'BSc. in Mechanical Engineering',
   department: 'Department of Mechanical Engineering', university: 'Bangladesh University of Engineering and Technology (BUET)',
   affiliation: 'Bangladesh University of Engineering and Technology (BUET)',
-  location: 'Dhaka, Bangladesh', email: 'zareerkazi06@gmail.com', cv: 'files/cv.pdf', scholar: '', orcid: '', github: '', portrait: 'images/portrait.jpg',
+  location: 'Dhaka, Bangladesh', email: 'zareerkazi06@gmail.com', cv: 'files/cv.pdf?v=92345aac', scholar: '', orcid: '', github: '', portrait: 'images/portrait.jpg',
   linkedin: 'https://linkedin.com/in/kazi-md-zareer-5987b922b',
   researchgate: 'https://www.researchgate.net/profile/Kazi-Md-Zareer',
   introduction: 'Hello! I am Kazi Zareer, a recent Mechanical Engineering graduate from BUET. My research interests lie in computational mechanics, finite element analysis, additive manufacturing, computational heat transfer, and machine learning.',
