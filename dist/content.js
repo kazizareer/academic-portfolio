@@ -470,17 +470,6 @@ window.portfolio = {
 
   awards: [
     {
-      "title": "Finalist — Speak Out for Engineering (SOfE)",
-      "issuer": "IMechE BUET Student Chapter · Intra BUET Heats ’25",
-      "year": "2025",
-      "detail": "Received a Certificate of Appreciation for securing a place among the finalists of Speak Out for Engineering (SOfE): Intra BUET Heats ’25.",
-      "talkTitle": "Can Roads Pave the Way to Clean Air?",
-      "talkSummary": "Presented a literature-based engineering proposal exploring how titanium dioxide (TiO₂) photocatalytic pavements could help reduce roadside nitrogen oxide pollution. The talk compared surface coating with mixing catalysts into asphalt, examined the gap between laboratory and field performance, and discussed traffic abrasion, dust deposition, catalyst adhesion, visible-light activation, and the cost and maintenance considerations for wider deployment.",
-      "document": "files/sofe-2025-certificate.pdf",
-      "galleryLabel": "SoFE finalist certificate",
-      "images": [{"src":"images/sofe-certificate.jpg","caption":"Certificate of Appreciation · SOfE Intra BUET Heats ’25","alt":"Certificate of Appreciation awarded to Kazi Md. Zareer for reaching the finals of SOfE Intra BUET Heats 2025."}]
-    },
-    {
         "title": "Best Paper Award",
         "issuer": "International Conference on Sustainable Agriculture and Smart Development (ICSASD)",
         "year": "2026",
@@ -499,6 +488,17 @@ window.portfolio = {
                 "alt": "Close-up of the ICSASD 2026 Best Paper Award trophy."
             }
         ]
+    },
+    {
+      "title": "Finalist — Speak Out for Engineering (SOfE)",
+      "issuer": "IMechE BUET Student Chapter · Intra BUET Heats ’25",
+      "year": "2025",
+      "detail": "Received a Certificate of Appreciation for securing a place among the finalists of Speak Out for Engineering (SOfE): Intra BUET Heats ’25.",
+      "talkTitle": "Can Roads Pave the Way to Clean Air?",
+      "talkSummary": "Presented a literature-based engineering proposal exploring how titanium dioxide (TiO₂) photocatalytic pavements could help reduce roadside nitrogen oxide pollution. The talk compared surface coating with mixing catalysts into asphalt, examined the gap between laboratory and field performance, and discussed traffic abrasion, dust deposition, catalyst adhesion, visible-light activation, and the cost and maintenance considerations for wider deployment.",
+      "document": "files/sofe-2025-certificate.pdf",
+      "galleryLabel": "SoFE finalist certificate",
+      "images": [{"src":"images/sofe-certificate.jpg","caption":"Certificate of Appreciation · SOfE Intra BUET Heats ’25","alt":"Certificate of Appreciation awarded to Kazi Md. Zareer for reaching the finals of SOfE Intra BUET Heats 2025."}]
     },
     {
         "title": "Dean’s List Award",
