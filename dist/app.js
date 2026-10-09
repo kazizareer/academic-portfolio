@@ -78,7 +78,7 @@ function documentPreview(url,label,cover){
 }
 function featuredWorks(){
  const cards=[
-  {label:'Undergraduate thesis',title:'From manufacturing stress to fracture behavior',image:p.research[0].images[0].src,alt:p.research[0].images[0].alt,description:'Finite element investigation of LPBF process parameters, residual stresses, and the mechanical integrity of 17-4PH stainless steel.',url:'research.html#research-1',action:'Explore thesis'},
+  {label:'Thesis · Laser additive manufacturing and Fracture mechanics',title:'From manufacturing stress to fracture behavior',image:p.research[0].images[0].src,alt:p.research[0].images[0].alt,description:'Finite element investigation of LPBF process parameters, residual stresses, and the mechanical integrity of 17-4PH stainless steel.',url:'research.html#research-1',action:'Explore thesis'},
   {label:'Robotics & machine learning',title:'GreenGuardian',image:p.projects[0].images[0].src,alt:p.projects[0].images[0].alt,description:'A quadruped robot combining wireless motion control, live video, and potato leaf disease detection.',url:'projects.html#project-1',action:'Explore project'},
   {label:'Thermal engineering',title:'Shell-and-tube heat exchanger',image:p.projects[1].images[0].src,alt:p.projects[1].images[0].alt,description:'Analytical thermal design, CFD analysis, and fabrication of a heat exchanger with disk-and-doughnut baffles.',url:'projects.html#project-2',action:'Explore project'}
  ];
