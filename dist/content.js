@@ -45,6 +45,7 @@ window.portfolio = {
         "kind": "Undergraduate thesis",
         "presentation": "files/thesis-defense.pdf",
         "period": "Jun. 2025 – Jun. 2026",
+        "status": "submitted to a journal",
         "title": "Analysis of Residual Stress and Fracture Mechanics in Laser Powder Bed Fusion of 17-4PH Stainless Steel",
         "institution": "Department of Mechanical Engineering, BUET",
         "supervisor": "Dr. Mohammad A. Motalab",
