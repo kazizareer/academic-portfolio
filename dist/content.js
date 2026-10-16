@@ -18,7 +18,7 @@ window.portfolio = {
       period: 'Jan. 2022 – Jun. 2026',
       logo: 'images/buet.jpg', logoLabel: 'BUET', website: 'https://www.buet.ac.bd/',
       details: [
-        {label: 'Cumulative GPA', text: '3.57/4.00 · Major GPA: 3.91/4.00'},
+        {label: 'Cumulative GPA', text: '3.57/4.00 · Last 4 terms GPA: 3.86/4.00'},
         {label: 'Relevant coursework', text: 'Mechanics of Solids, Mechanics of Machinery, Machine Design, Applied Engineering Mathematics, Composite Materials, Control Engineering, Heat Transfer, Fluid Mechanics, Instrumentation and Measurement, and Bio-engineering.'},
         {label: 'Undergraduate thesis title', text: 'Analysis of Residual Stress and Fracture Mechanics in Laser Powder Bed Fusion of 17-4PH Stainless Steel'},
         {label: 'Academic distinctions', text: 'Mechanical Engineering Faculty Dean’s List Award and University Merit Scholarship.'}
