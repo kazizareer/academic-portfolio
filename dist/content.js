@@ -476,6 +476,8 @@ window.portfolio = {
         "year": "2026",
         "detail": "GreenGuardian: A Quadruped Spider Robot Prototype for Real-Time Potato Disease Detection Using Deep Learning.",
         "galleryLabel": "Best Paper Award",
+        "document": "files/icsasd-2026-acceptance-certificate.pdf",
+        "documentLabel": "View acceptance certificate (PDF)",
         "galleryMode": "photos",
         "images": [
             {
@@ -487,6 +489,11 @@ window.portfolio = {
                 "src": "images/bestpaper2.jpg",
                 "caption": "Best Paper Award trophy",
                 "alt": "Close-up of the ICSASD 2026 Best Paper Award trophy."
+            },
+            {
+                "src": "images/icsasd-2026-acceptance-certificate.png",
+                "caption": "Official acceptance certificate",
+                "alt": "ICSASD 2026 Certificate of Acceptance issued by the conference committee for GreenGuardian, listing Kazi Md Zareer among the authors."
             }
         ]
     },
