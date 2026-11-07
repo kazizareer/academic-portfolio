@@ -47,7 +47,16 @@ function researchFigure(item,i){
   const media=safe(item.image)?`<img class="research-image" src="${safe(item.image)}" alt="${esc(item.imageAlt)}">`:item.splitFigure?`<div class="research-image-pair">${picture('','Simulation','research-placeholder')}${picture('','Combined results','research-placeholder')}</div>`:picture('','COMSOL validation','research-placeholder');
   return `<figure class="research-figure">${media}<figcaption>${esc(item.imageCaption)}</figcaption></figure>`;
 }
-function researchExperience(item,i){return `<article class="research-entry" id="research-${i+1}"><header><div class="research-meta"><span>${esc(item.kind)}</span><span>${esc(item.period)}</span>${item.status?`<span class="badge">${esc(item.status)}</span>`:''}</div><h2>${esc(item.title)}</h2><p class="institution">${esc(item.institution)}</p><p class="research-supervisor">${esc(item.supervisorLabel || 'Supervisor')}: ${esc(item.supervisor)}</p></header><p class="research-summary">${esc(item.summary)}</p><h3>My contributions</h3><ul class="research-points">${item.contributions.map(point=>`<li>${esc(point)}</li>`).join('')}</ul>${documentPreview(item.presentation,'Thesis defense presentation','images/thesis-defense-cover.jpg')}${item.images?.length||item.image||item.splitFigure?researchFigure(item,i):''}${item.findings.length?`<h3>Key findings</h3><ul class="research-points">${item.findings.map(point=>`<li>${esc(point)}</li>`).join('')}</ul>`:''}${item.note?`<p class="research-note"><strong>Model scope:</strong> ${esc(item.note)}</p>`:''}</article>`;}
+function researchExperience(item,i){
+  const header = `<header><div class="research-meta"><span>${esc(item.kind)}</span><span>${esc(item.period)}</span>${item.status?`<span class="badge">${esc(item.status)}</span>`:''}</div><h2>${esc(item.title)}</h2><p class="institution">${esc(item.institution)}</p><p class="research-supervisor">${esc(item.supervisorLabel || 'Supervisor')}: ${esc(item.supervisor)}</p></header>`;
+  const contributions = item.contribution
+    ? `<h3>My contribution</h3><p class="research-summary">${esc(item.contribution)}</p>`
+    : `<p class="research-summary">${esc(item.summary)}</p><h3>My contributions</h3><ul class="research-points">${item.contributions.map(point=>`<li>${esc(point)}</li>`).join('')}</ul>`;
+  const figures = item.images?.length || item.image || item.splitFigure ? researchFigure(item,i) : '';
+  const findings = item.findings?.length ? `<h3>Key findings</h3><ul class="research-points">${item.findings.map(point=>`<li>${esc(point)}</li>`).join('')}</ul>` : '';
+  const note = item.note ? `<p class="research-note"><strong>Model scope:</strong> ${esc(item.note)}</p>` : '';
+  return `<article class="research-entry" id="research-${i+1}">${header}${contributions}${documentPreview(item.presentation,'Thesis defense presentation')}${figures}${findings}${note}</article>`;
+}
 function publicationAuthors(authors){
   return authors.split(',').map(author=>{
     const name=author.trim().replace(/†$/, '');
@@ -74,15 +83,15 @@ function videoEmbed(url,title){
 }
 function documentPreview(url,label,cover){
  if(!safe(url))return '';
- return `<div class="document-resource"><a href="${safe(url)}" target="_blank" rel="noopener noreferrer" class="document-cover" aria-label="${esc(label)}">${picture(cover,label,'document-cover-image')}</a><div><span class="resource-type">Presentation · PDF</span><h3>${esc(label)}</h3><div class="project-links">${externalLink(url,'Open presentation')}<a class="text-link" href="${safe(url)}" download>Download PDF</a></div></div></div>`;
+ return `<div class="document-resource">${cover?`<a href="${safe(url)}" target="_blank" rel="noopener noreferrer" class="document-cover" aria-label="${esc(label)}">${picture(cover,label,'document-cover-image')}</a>`:''}<div><span class="resource-type">Presentation · PDF</span><h3>${esc(label)}</h3><div class="project-links">${externalLink(url,'Open presentation')}<a class="text-link" href="${safe(url)}" download>Download PDF</a></div></div></div>`;
 }
 function featuredWorks(){
  const cards=[
-  {label:'Thesis · Laser additive manufacturing and Fracture mechanics',title:'From manufacturing stress to fracture behavior',image:p.research[0].images[0].src,alt:p.research[0].images[0].alt,description:'Finite element investigation of LPBF process parameters, residual stresses, and the mechanical integrity of 17-4PH stainless steel.',url:'research.html#research-1',action:'Explore thesis'},
+  {label:'Thesis · Laser additive manufacturing and Fracture mechanics',title:'From manufacturing stress to fracture behavior',description:'Finite element investigation of LPBF process parameters, residual stresses, and the mechanical integrity of 17-4PH stainless steel.',url:'research.html#research-1',action:'Explore thesis'},
   {label:'Robotics & machine learning',title:'GreenGuardian',image:p.projects[0].images[0].src,alt:p.projects[0].images[0].alt,description:'A quadruped robot combining wireless motion control, live video, and potato leaf disease detection.',url:'projects.html#project-1',action:'Explore project'},
   {label:'Thermal engineering',title:'Shell-and-tube heat exchanger',image:p.projects[1].images[0].src,alt:p.projects[1].images[0].alt,description:'Analytical thermal design, CFD analysis, and fabrication of a heat exchanger with disk-and-doughnut baffles.',url:'projects.html#project-2',action:'Explore project'}
  ];
- return `<section class="featured-work" aria-labelledby="featured-title"><div class="section-heading"><div><div class="eyebrow">Selected research & engineering</div><h2 id="featured-title">Featured work</h2></div><a class="text-link" href="research.html">Research experience</a></div><div class="featured-grid">${cards.map(c=>`<article class="featured-card"><a class="featured-image" href="${c.url}" aria-label="${esc(c.title)}">${picture(c.image,c.alt,'')}</a><div class="featured-copy"><span class="resource-type">${c.label}</span><h3><a href="${c.url}">${c.title}</a></h3><p>${c.description}</p><a class="text-link" href="${c.url}">${c.action}</a></div></article>`).join('')}</div></section>`;
+ return `<section class="featured-work" aria-labelledby="featured-title"><div class="section-heading"><div><div class="eyebrow">Selected research & engineering</div><h2 id="featured-title">Featured work</h2></div><a class="text-link" href="research.html">Research experience</a></div><div class="featured-grid">${cards.map(c=>`<article class="featured-card">${c.image?`<a class="featured-image" href="${c.url}" aria-label="${esc(c.title)}">${picture(c.image,c.alt,'')}</a>`:''}<div class="featured-copy"><span class="resource-type">${c.label}</span><h3><a href="${c.url}">${c.title}</a></h3><p>${c.description}</p><a class="text-link" href="${c.url}">${c.action}</a></div></article>`).join('')}</div></section>`;
 }
 let body = '';
 if(title==='About') body=`<section class="about-layout" aria-label="About Kazi Md Zareer">

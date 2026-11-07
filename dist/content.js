@@ -50,13 +50,7 @@ window.portfolio = {
         "institution": "Department of Mechanical Engineering, BUET",
         "supervisor": "Dr. Mohammad A. Motalab",
         "supervisorLabel": "Thesis Supervisor",
-        "summary": "Investigated how laser powder bed fusion (LPBF) process parameters influence the structural integrity of 17-4PH stainless steel, connecting manufacturing-induced residual stresses to stress concentration and fracture mechanics.",
-        "contributions": [
-            "Used a sequential finite element workflow linking transient thermo-mechanical LPBF simulations to static structural and contour-integral fracture analyses.",
-            "Transferred the residual-stress tensor from the manufacturing mesh to the structural and fracture models.",
-            "Compared laser power, scan speed, hatch spacing, and layer thickness across as-built and H900 heat-treated conditions."
-        ],
-        "findings": []
+        "contribution": "I used a sequential finite element workflow to link transient thermo-mechanical LPBF simulations with structural and contour-integral fracture analyses. I transferred the residual-stress tensor from the manufacturing mesh to the structural and fracture models, then compared the effects of laser power, scan speed, hatch spacing, and layer thickness across the as-built and H900 heat-treated conditions."
     },
     {
         "kind": "CFDHT Research Group",
