@@ -56,39 +56,7 @@ window.portfolio = {
             "Transferred the residual-stress tensor from the manufacturing mesh to the structural and fracture models.",
             "Compared laser power, scan speed, hatch spacing, and layer thickness across as-built and H900 heat-treated conditions."
         ],
-        "image": "",
-        "imageAlt": "Combined figure showing LPBF simulation models and fracture mechanics results",
-        "imageCaption": "LPBF simulation setup and combined results",
-        "splitFigure": true,
-        "findings": [
-            "Within the simulated parameter ranges, hatch spacing and scan speed had the strongest influence on effective stress concentration, with total variations of 9.71% and 8.74%, respectively.",
-            "Laser power had the strongest influence on Mode I stress intensity, with a total variation of 11.71%; layer thickness had a much smaller influence of 0.069%.",
-            "Effective stress concentration was largely independent of applied load, while stress intensity showed stronger load dependence.",
-            "In the H900 heat-treatment model, residual-stress relief removed the sensitivity to the investigated process parameters."
-        ],
-        "galleryLabel": "Thesis",
-        "images": [
-            {
-                "src": "images/thesis-graphical-abstract-image1.png",
-                "caption": "Graphical abstract · LPBF workflow and parameter sensitivity",
-                "alt": "Graphical abstract showing LPBF process parameters, two-stage finite element coupling and sensitivity of stress concentration and stress intensity."
-            },
-            {
-                "src": "images/thesis-summary-image1.png",
-                "caption": "SCF · Post-LPBF loading (ASTM D5766)",
-                "alt": "Stress concentration analysis of the ASTM D5766 specimen under mechanical loading after LPBF manufacturing, including the transferred manufacturing residual stresses."
-            },
-            {
-                "src": "images/thesis-summary-image3.png",
-                "caption": "SIF · Post-LPBF loading (ASTM E647)",
-                "alt": "Stress intensity analysis of the ASTM E647 compact-tension specimen under mechanical loading after LPBF manufacturing, including the transferred manufacturing residual stresses."
-            },
-            {
-                "src": "images/thesis-summary-image2.png",
-                "caption": "Combined results · Stress concentration and stress intensity",
-                "alt": "Summary diagram showing amplified effective stress concentration and suppression of stress intensity by compressive residual stress."
-            }
-        ]
+        "findings": []
     },
     {
         "kind": "CFDHT Research Group",
