@@ -45,10 +45,10 @@ window.portfolio = {
         "kind": "Undergraduate thesis",
         "presentation": "files/thesis-defense.pdf",
         "period": "Jun. 2025 – Jun. 2026",
-        "status": "submitted to a journal",
+        "status": "submission ongoing",
         "title": "Analysis of Residual Stress and Fracture Mechanics in Laser Powder Bed Fusion of 17-4PH Stainless Steel",
         "institution": "Department of Mechanical Engineering, BUET",
-        "supervisor": "Dr. Mohammad A. Motalab",
+        "supervisor": "Dr. Mohammad Abdul Motalab",
         "supervisorLabel": "Thesis Supervisor",
         "contribution": "I used a sequential finite element workflow to link transient thermo-mechanical LPBF simulations with structural and contour-integral fracture analyses. I transferred the residual-stress tensor from the manufacturing mesh to the structural and fracture models, then compared the effects of laser power, scan speed, hatch spacing, and layer thickness across the as-built and H900 heat-treated conditions."
     },
